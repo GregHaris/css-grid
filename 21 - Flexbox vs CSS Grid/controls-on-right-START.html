@@ -13,11 +13,13 @@
   <!-- The everything on the right except the one thing -->
 
   <div class="tracks">
-    <div class="track">
+    <div class="track-1">
       <h2>The Future (Ft. The R.O.C.)</h2>
-      <button>⭐</button>
-      <button>❤️</button>
-      <button>❌</button>
+      <div>
+        <button>⭐</button>
+        <button>❤️</button>
+        <button>❌</button>
+      </div>
     </div>
     <div class="track">
       <h2>Bounce With Me (Ft. Jermaine Dupri & Xscape)</h2>
@@ -51,10 +53,25 @@
     </div>
   </div>
   <style>
+
+    /*  Using Grid */
     .track {
+      display: grid;
       background: white;
       padding: 10px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      grid-template-columns: 1fr;
+      grid-auto-flow: column;
+    }
+
+
+    /* Using flex to achieve the same result on item 1 (track-1) */
+    .track-1{
+      background: white;
+      padding: 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      place-content: space-between;
     }
   </style>
 </body>

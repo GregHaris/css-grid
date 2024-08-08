@@ -43,10 +43,25 @@
   </div>
 
   <style>
+
+    body {
+      background: #faf2d0;
+    }
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas: 
+      "💩  💩  💩  💩  🍔  🍔 🍔 🍔"
+      "💩  💩  💩  💩  🍔  🍔 🍔 🍔"
+      "💩  💩  💩  💩  🍔  🍔 🍔 🍔"
+      "💩  💩  💩  💩  🍔  🍔 🍔 🍔";
     }
+
+    .item3 {
+      grid-column: 💩-start / 🍔-end;
+    }
+
+
   </style>
 </body>
 

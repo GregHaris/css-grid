@@ -1,0 +1,11 @@
+p {
+  font-size: 50px;
+  border-bottom: 10px solid var(--yellow);
+  color: var(--black);
+}
+
+.container {
+  margin: 10px;
+  font-size: 1rem;
+  color: var(--yellow)
+}
